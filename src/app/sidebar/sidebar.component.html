@@ -1,6 +1,34 @@
-<div class="sidebar" *ngFor="let chat of Chats">
-  <div [class.selected]="chat == selectedChat" (click)="onSelect(chat)">
-    <h5>{{ chat.name }}</h5>
-    <p>{{ chat.content }}</p>
+<div class="home">
+  <div class="row">
+    <div class="col-5">
+      <div class="sidebar" *ngFor="let chat of Chats">
+        <div
+          [class.selected]="chat == selectedChat"
+          (click)="onSelect(chat)"
+          class="chat"
+        >
+          <div>
+            <img src="../../assets/profile.svg" alt="" height="70px" />
+          </div>
+          <div>
+            <h5>{{ chat.name }}</h5>
+            <p>{{ chat.content }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-7" class="chatarea">
+      <div *ngIf="selectedChat">
+        <app-chatarea [chat]="selectedChat"></app-chatarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="row chat">
+    <div class="col-5"></div>
+    <div class="col-7">
+      <app-typing></app-typing>
+    </div>
   </div>
 </div>

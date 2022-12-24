@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Chat } from '../chat';
 import { CHATS } from '../mock-chat';
 
@@ -8,6 +8,7 @@ import { CHATS } from '../mock-chat';
   styleUrls: ['./sidebar.component.css'],
 })
 export class SidebarComponent implements OnInit {
+  @Input() chats?: Chat[];
   // chats: Chat[] = []; //
   Chats = CHATS;
   selectedChat?: Chat;
