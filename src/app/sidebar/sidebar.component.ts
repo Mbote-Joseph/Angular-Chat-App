@@ -10,8 +10,13 @@ import { CHATS } from '../mock-chat';
 export class SidebarComponent implements OnInit {
   // chats: Chat[] = []; //
   Chats = CHATS;
+  selectedChat?: Chat;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  onSelect(chat: Chat): void {
+    this.selectedChat = chat;
+  }
 }

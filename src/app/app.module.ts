@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
 import { TypingComponent } from './typing/typing.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,10 @@ import { TypingComponent } from './typing/typing.component';
     HomeComponent,
     SidebarComponent,
     ChatareaComponent,
-    TypingComponent
+    TypingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

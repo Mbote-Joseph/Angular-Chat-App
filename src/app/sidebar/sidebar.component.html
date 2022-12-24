@@ -1,5 +1,6 @@
 <div class="sidebar" *ngFor="let chat of Chats">
-  <h5>{{ chat.name }}</h5>
-  <p>{{ chat.content }}</p>
-  <hr />
+  <div [class.selected]="chat == selectedChat" (click)="onSelect(chat)">
+    <h5>{{ chat.name }}</h5>
+    <p>{{ chat.content }}</p>
+  </div>
 </div>

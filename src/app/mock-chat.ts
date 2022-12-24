@@ -50,19 +50,19 @@ export const CHATS: Chat[] = [
       "I've been busy with work and spending time with my family. How about you?",
     timestamp: 1623456792,
   },
-  //   {
-  //     id: '12349',
-  //     name: 'Alice',
-  //     content:
-  //       "I've been busy with work too, but I've also been trying to fit in some time for hobbies and exercise. It can be a challenge to balance everything.",
-  //     timestamp: 1623456793,
-  //   },
-  //   {
-  //     id: '12345',
-  //     name: 'Alice',
-  //     content: 'Hello, how are you?',
-  //     timestamp: 1623456789,
-  //   },
+  {
+    id: '12349',
+    name: 'Alice',
+    content:
+      "I've been busy with work too, but I've also been trying to fit in some time for hobbies and exercise. It can be a challenge to balance everything.",
+    timestamp: 1623456793,
+  },
+  {
+    id: '12345',
+    name: 'Alice',
+    content: 'Hello, how are you?',
+    timestamp: 1623456789,
+  },
   //   {
   //     id: '12346',
   //     name: 'Bob',
