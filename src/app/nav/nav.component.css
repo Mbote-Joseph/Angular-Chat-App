@@ -1,0 +1,18 @@
+a {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  transition: 0.8s ease;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #ee6e73;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+  z-index: 10;
+}
