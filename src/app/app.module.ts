@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ChatareaComponent } from './chatarea/chatarea.component';
+import { TypingComponent } from './typing/typing.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChatareaComponent } from './chatarea/chatarea.component';
     FooterComponent,
     HomeComponent,
     SidebarComponent,
-    ChatareaComponent
+    ChatareaComponent,
+    TypingComponent
   ],
   imports: [
     BrowserModule,
