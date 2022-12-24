@@ -1,1 +1,5 @@
-<p>sidebar works!</p>
+<div class="sidebar" *ngFor="let chat of Chats">
+  <h5>{{ chat.name }}</h5>
+  <p>{{ chat.content }}</p>
+  <hr />
+</div>
